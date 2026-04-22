@@ -20,28 +20,9 @@ Ahora incluye backend con Express + SQLite para guardar clientes, cookies para a
 ## 📋 Requisitos Previos
 
 - Node.js (versión 18 o superior)
-- pnpm (recomendado) o npm
+- npm
 
 ## 🔧 Instalación
-
-### Usando pnpm (recomendado)
-
-```bash
-# Instalar dependencias
-pnpm install
-
-# Ejecutar en modo desarrollo
-pnpm dev
-
-# Ejecutar backend + frontend al mismo tiempo
-pnpm dev:full
-
-# Construir para producción
-pnpm build
-
-# Vista previa de la build de producción
-pnpm preview
-```
 
 ### Usando npm
 
@@ -64,7 +45,7 @@ npm run preview
 
 ## 🌐 Desarrollo Local
 
-Después de ejecutar `pnpm dev` o `npm run dev`, el proyecto estará disponible en:
+Después de ejecutar `npm run dev`, el proyecto estará disponible en:
 
 ```
 http://localhost:5173
@@ -105,7 +86,6 @@ Variables clave:
 │   │   │   ├── Projects.tsx   # Proyectos destacados
 │   │   │   ├── ProjectProcess.tsx # Flujo transparente de trabajo
 │   │   │   ├── Contact.tsx    # Formulario de contacto
-│   │   │   └── ui/            # Componentes UI reutilizables
 │   │   ├── hooks/             # Custom hooks
 │   │   └── App.tsx            # Componente principal
 │   ├── styles/                # Estilos globales
@@ -130,7 +110,6 @@ Variables clave:
 - **Tailwind CSS 4**: Framework de CSS
 - **Motion (Framer Motion)**: Animaciones 3D
 - **Lucide React**: Iconos
-- **React Hook Form**: Formularios
 - **Express**: API backend
 - **SQLite**: Persistencia local de clientes
 - **Nodemailer**: Envio de email desde backend
@@ -145,7 +124,6 @@ Variables clave:
 
 ### Animaciones
 - **ScrollProgress**: Barra de progreso de scroll animada
-- **ParallaxSection**: Efectos de parallax basados en scroll
 - **RippleEffect**: Ondas expansivas al hacer clic
 - **Loader3D**: Loader 3D al cargar la página
 
@@ -160,7 +138,6 @@ Variables clave:
 ## 🗄️ Endpoints Backend
 
 - `GET /api/health`: estado del backend
-- `POST /api/clients`: guarda un cliente en SQLite
 - `POST /api/clients`: guarda cliente en SQLite y envía notificación por correo
 - `GET /api/clients`: lista los últimos 100 clientes guardados
 
